@@ -1,0 +1,36 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "."
+                         "Info"
+                         "Liens";
+    justify-content: center;
+    align-items: center;
+}
+
+.Info{
+    font-size: 2rem;
+    text-align: center;
+    grid-area: Info;
+}
+
+.Liens{
+    display: flex;
+    grid-area: Liens;
+}
+
+.Liens a{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
